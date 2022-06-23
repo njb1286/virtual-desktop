@@ -1,0 +1,47 @@
+.program-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .program-outliner {
+        width: 60%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $window-color;
+        border: $window-border;
+        border-radius: 5px;
+        flex-direction: column;
+
+        .top-components {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .program {
+            width: calc(100% - 50px);
+            height: calc(100% - 50px);
+            border: $window-border;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            .body {
+                width: calc(100% - 2px);
+                height: calc(100% - 2px);
+                display: grid;
+            }
+        }
+    }
+}

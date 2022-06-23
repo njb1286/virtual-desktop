@@ -16,6 +16,10 @@ export default class Items extends Component {
     }
     
     render() {
-        return this.state.apps.map(e => <Item name={e.name} url={e.img_url} />)
+        return (
+            <div className="apps">
+                {this.state.apps.map(e => <Item name={e.name} url={e.img_url} />)}
+            </div>
+        )
     }
 }
