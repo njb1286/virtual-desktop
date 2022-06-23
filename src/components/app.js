@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import Items from './desktop/items';
 
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+        <img src="https://unsplash.it/1920/1200" alt="" className="bg-img" />
+
+        <Items />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-router",
-  "version": "1.0.0",
-  "description": "Basic skeleton codebase for React/Redux/Router applications.",
+  "name": "virtual-desktop",
+  "version": "2.0.0",
+  "description": "Just a simple, useless application that creates a virtual desktop in your browser.",
   "scripts": {
     "preinstall": "npm set audit false",
     "start": "webpack-dev-server --config webpack/dev.config.js --watch",
@@ -25,7 +25,7 @@
     "sass",
     "css module"
   ],
-  "author": "Your Name Here",
+  "author": "Njb1286",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bottega-code-school/js-builder/issues"
