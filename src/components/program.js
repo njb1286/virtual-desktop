@@ -6,7 +6,7 @@ export default function() {
             <div className="program-outliner">
                 <div className="top-components">
                     <div className="left">
-                        <div className="file">
+                        <div className="program-options">
 
                             
                             <select name="" id="">
@@ -17,7 +17,7 @@ export default function() {
                         </div>
                     </div>
 
-                    <div className="middle" id='program-name'></div>
+                    <div className="middle" id='program-name'>Some program name...</div>
 
                     <div className="right">
                         <div className="close-program-btn-wrapper">

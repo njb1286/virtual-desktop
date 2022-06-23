@@ -13,18 +13,43 @@
     .program-outliner {
         width: 60%;
         height: 60%;
-        display: flex;
+        display: grid;
         align-items: center;
-        justify-content: center;
+        justify-items: center;
+        grid-template-rows: 1fr 25fr;
         background-color: $window-color;
         border: $window-border;
         border-radius: 5px;
         flex-direction: column;
 
         .top-components {
-            width: 100%;
+            width: calc(100% - 30px);
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 10px;
+
+            .left {
+                display: flex;
+                justify-content: left;
+            }
+
+            .middle {
+                display: flex;
+                justify-content: center;
+            }
+
+            .right {
+                display: flex;
+                justify-content: right;
+                margin-top: -2px;
+
+                .close-program-btn-wrapper .close-program {
+                    background-color: $close-window-button;
+                    border: none;
+                    cursor: pointer;
+                    padding: 5px 25px;
+                }
+            }
         }
 
         .program {
