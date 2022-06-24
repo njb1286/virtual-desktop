@@ -13,17 +13,20 @@
     .program-outliner {
         width: 60%;
         height: 60%;
-        display: grid;
+        // display: grid;
+        // align-items: center;
+        // justify-items: center;
+        // grid-template-rows: 1fr 25fr;
+        display: flex;
         align-items: center;
-        justify-items: center;
-        grid-template-rows: 1fr 25fr;
+        justify-content: center;
         background-color: $window-color;
         border: $window-border;
         border-radius: 5px;
         flex-direction: column;
 
         .top-components {
-            width: calc(100% - 30px);
+            width: $inner-program-width;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             margin-left: 10px;
@@ -41,20 +44,22 @@
             .right {
                 display: flex;
                 justify-content: right;
-                margin-top: -2px;
+                margin-bottom: 5px;
 
                 .close-program-btn-wrapper .close-program {
                     background-color: $close-window-button;
                     border: none;
-                    cursor: pointer;
                     padding: 5px 25px;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
                 }
             }
         }
 
         .program {
-            width: calc(100% - 50px);
-            height: calc(100% - 50px);
+            width: $inner-program-width;
+            height: $inner-program-width;
             border: $window-border;
             background-color: white;
             display: flex;

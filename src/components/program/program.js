@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function() {
+export default function(props) {
+    console.log("Props", props);
     return (
         <div className="program-wrapper">
             <div className="program-outliner">
@@ -17,11 +19,11 @@ export default function() {
                         </div>
                     </div>
 
-                    <div className="middle" id='program-name'>Some program name...</div>
+                    <div className="middle" id='program-name'>{props.programData.name}</div>
 
                     <div className="right">
                         <div className="close-program-btn-wrapper">
-                            <button className='close-program' onClick={console.log("You have closed the program...")}>X</button>
+                            <Link to='/' className='close-program' onClick={console.log("You have closed the program...")}>X</Link>
                         </div>
                     </div>
                 </div>
