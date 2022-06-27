@@ -1,0 +1,48 @@
+.left > div {
+    display: flex;
+    > div {
+        display: flex;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.dropdown-title {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 100px;
+    display: none;
+    position: absolute;
+    max-height: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+        background-color: #f1f1f1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+
+.dropdown-wrapper:hover {
+    .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-title {
+        text-decoration: underline;
+    }
+}
+
+.input-checkbox {
+    cursor: pointer;
+}

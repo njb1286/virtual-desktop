@@ -8,15 +8,7 @@ export default function(props) {
             <div className="program-outliner">
                 <div className="top-components">
                     <div className="left">
-                        <div className="program-options">
-
-                            
-                            <select name="" id="">
-                                <option value="">Some option...</option>
-                            </select>
-
-
-                        </div>
+                        {props.programData.actions}
                     </div>
 
                     <div className="middle" id='program-name'>{props.programData.name}</div>
@@ -30,11 +22,8 @@ export default function(props) {
 
                 <div className='program'>
 
-                    <div className="body">
+                    {props.programData.body}
 
-                        
-
-                    </div>
                 </div>
             </div>
         </div>
